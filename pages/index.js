@@ -3,7 +3,7 @@ import HeadLink from '../components/HeadLink'
 
 export default function Home() {
   return (
-    <nav className='bg-amber-400'>
+    <nav className='flex justify-around items-center py-4 bg-amber-500'>
       <div className='relative w-36 h-10'>
         <Image src="https://qiniucssjs.gracg.com/imglogo2022/img-horizontal-white.png" layout='fill' objectFit='contain' />
       </div>
@@ -14,6 +14,7 @@ export default function Home() {
           <HeadLink title="hello" />
           <HeadLink title="hello" />
         </div>
+        <button className='text-white font-semibold rounded-full border  border-blue-700 px-5 py-1.5 transition-all hover:border-2'>登录</button>
       </div>
     </nav>
   )
