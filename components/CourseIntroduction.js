@@ -1,6 +1,6 @@
 export default function CourseIntroduction() {
     return (
-        <div className="flex justify-center">
+        <div className="bg-red-500">
             课程简介
         </div>
     )

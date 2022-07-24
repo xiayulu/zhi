@@ -1,7 +1,7 @@
 import CourseHeader from "../../../components/CourseHeader"
 import CourseIntroduction from "../../../components/CourseIntroduction"
 import CourseNav from "../../../components/CourseNav"
-import CourseTab from "../../../components/CourseTab"
+import CourseSide from "../../../components/CourseSide"
 import HeadLink from "../../../components/HeadLink"
 import NavList from "../../../components/NavList"
 
@@ -23,16 +23,22 @@ export default function Home() {
                     <button className='text-white font-semibold rounded-full border  border-blue-700 px-5 py-1.5 transition-all hover:border-2'>登录</button>
                 </div>
             </nav>
-            <div>
-                <CourseHeader></CourseHeader>
-            </div>
-            <div>
-                <CourseNav></CourseNav>
-            </div>
-            <div>
-                <CourseIntroduction></CourseIntroduction>
+            <div className="container mx-auto px-1 py-3">
+                <div>
+                    <CourseHeader></CourseHeader>
+                </div>
+                <div>
+                    <CourseNav></CourseNav>
+                </div>
+                <div className="grid sm:grid-cols-5 gap-4">
+                    <div className="sm:col-span-4">
+                        <CourseIntroduction ></CourseIntroduction>
+                    </div>
+                    <div>
+                        <CourseSide className="sm:col"></CourseSide>
+                    </div>
+                </div>
             </div>
         </div>
     )
-
 }
