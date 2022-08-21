@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import 'antd/dist/antd.css'; */
 
 /* https://www.bilibili.com/video/BV14B4y1p71q */
 /* .color-ink {
@@ -13,4 +14,4 @@
 
 .color-green {
   color: #7e7f43;
-} */
+} */ 
